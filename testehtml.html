@@ -5,6 +5,7 @@
         <meta charset="UTF-8"/>
         <meta name="description" content="Texto descritivo da página"/>
         <meta name="author" content="Gama"/>
+<!-- Abaixo é onde configuramos que a pagina vai se adequar a qualquer aplicativo que o usuario abrir-->        
         <meta name="viewport" content="width=devide=width, initial-scale=1.0" /> 
 <!-- Abaixo é como puxamos um arquivo css para a estrutura html com a personalização que queremos -->
         <link rel="stylesheet" type="text/css" href="style.css" />
@@ -14,6 +15,43 @@
     
 
     </head>
+<!--Aqui já usamos a semantica para a construção da pagian. Main que seria o conteúdo principal
+No exemplo abaixo utilizamos diferente tamanhos para definir a ordem de grandeza da informação, conforme detalhado abaixo-->
+    <main> 
+            <h1>Terra</h1>
+            <p>Teste de informação </p>
+
+<!--Posso deixar em negrito com strong uma palavra ou frase inteira-->
+            <h2>America do Sul</h2>
+            <p><strong>Teste</strong> de informação </p>
+            <h3> Brasil </h3>
+            <p>Teste de informação </p>
+
+<!-- posso colocar uma palavra ou frase como <span>, a span na realidade apenas é um texto na tela. Não tem peso semantico-->            
+            <h4> <span>Sao Paulo</span> </h4>
+            <p>Teste de informação </p>
+            <h5> Campinas</h5>
+            <p>Teste de informação </p>
+            <h6> Formosa </h6>
+            <p>Teste de informação </p>
+
+<!-- Criando links no corpo da estrutura -->
+            <a href="http://www.google.com" title="site do google" target="_blank"> Teste de Link </a>
+<!-- neste caso puxamos o link com a href, adicionamos um titulo e com target falamos se irá abrir na mesma pagina
+(_selfie) ou em uma nova pagina (_blank)-->
+
+<!-- Podemos também add links direto em textos e fotos-->
+<!-- Neste caso o final da frase " aprender mais!" se torna um link para o site do google.-->
+            <p> Estamos no curso de HTML e queremos 
+                <a href="http://www.google.com" title="aprender mais" target="_blank" > aprender mais! </a> 
+
+            </p>
+<!-- no mesmo caso para fotos. Podemos gerar um link para quando clicar na foto ser encaminhado direto para um site. 
+Neste caso a foto esta sendo redirecionada para meu linkedin-->
+            <a href= "https://www.linkedin.com/in/deidison-bastos-pereira-1689bb50/" title="linkedin" target="_blank">
+                    <img src="/photo.jpg.png"/>
+            </a>"
+    </main>
         <body>
 
         </body>          
