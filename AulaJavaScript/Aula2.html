@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Olá, mundo! </title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<script src='main.js'></script>
+</head>
+
+<body>
+	<main>
+		Olá, mundo!
+
+		<!-- neste caso gerei uma variavel chamada nome que recebe a informção pedida no window.prompt.
+assim o alerta será uma frase + a informaçao que a variavel recebeu-->
+		<script>
+			let nome = window.prompt("Qual seu nome?")
+			window.alert("É um grande prazer," + nome)
+
+
+			/* O window.prompt entende que todos os dados são strings, desse jeito ele sempre concatena os dados
+			Para entender que neste caso é uma adição, precisamos transformar a varivel em numero. 
+			para inteiros utilizamos Number.parseInt
+			e para numero fracionados utilizamos Number.parseFloat */
+
+			let n1 = Number.parseInt(window.prompt("Digite um numero"))
+			let n2 = Number.parseInt(window.prompt("Digite ou numero"))
+			let res = n1 + n2
+			window.alert("A soma dos valores é:" + res)
+/* Na nova atualização do JavaScript podemos fazer direto com apenas Number()*/
+		</script>
+
+	</main>
+
+
+
+</body>
+
+</html>
