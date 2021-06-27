@@ -12,10 +12,11 @@
 
 <body>
 	<main>
-		Olá, mundo!
+		Olá, mundo! <br/>
 
 		<!-- neste caso gerei uma variavel chamada nome que recebe a informção pedida no window.prompt.
 assim o alerta será uma frase + a informaçao que a variavel recebeu-->
+
 		<script>
 			let nome = window.prompt("Qual seu nome?")
 			window.alert("É um grande prazer," + nome)
@@ -30,7 +31,23 @@ assim o alerta será uma frase + a informaçao que a variavel recebeu-->
 			let n2 = Number.parseInt(window.prompt("Digite ou numero"))
 			let res = n1 + n2
 			window.alert("A soma dos valores é:" + res)
-/* Na nova atualização do JavaScript podemos fazer direto com apenas Number()*/
+
+
+			/* Na nova atualização do JavaScript podemos fazer direto com apenas Number() ele vai enteder
+			Neste caso utilizamos template de strings. Usamos uma crase e ${} - placeholder, para chamar as variaveis. 
+			Assim fica mais facil para a visualização. */
+
+			let n3 = Number(window.prompt("Digite um numero"))
+			let n4 = Number(window.prompt("Digite outro numero"))
+			let res2 = n3 + n4
+			window.alert(`A soma de ${n3} e ${n4} e de ${res2}`)
+
+		
+
+			let nome2 = window.prompt("Qual seu nome?")
+			document.write (`Olá, ${nome2}! Seu nome tem ${nome2.length} letras<br/>`)
+			document.write (`Seu nome <strong> ${nome2} </strong> fica assim ${nome2.toUpperCase()} em letras maiusculas<br/>`)
+			document.write(`Seu nome <strong> ${nome2} </strong> fica assim ${nome2.toLowerCase()} em letras minusculas<br/>`)
 		</script>
 
 	</main>
