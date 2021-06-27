@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página de curso HTML Gama</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Texto descritivo da página"/>
+        <meta name="author" content="Gama"/>
+<!-- Abaixo é onde configuramos que a pagina vai se adequar a qualquer aplicativo que o usuario abrir-->        
+        <meta name="viewport" content="width=devide=width, initial-scale=1.0" /> 
+<!-- Abaixo é como puxamos um arquivo css para a estrutura html com a personalização que queremos -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+<!-- Abaixo é como puxamos um arquivo javascript para a estrutura html com as interações que queremos-->        
+        <script type="text/javascript" src="script.js"> 
+        </script>
+    
+<!-- posso adicionar img aqui, dando a entender que é meu logotipo-->
+        <img src="/logo.jpg" alt="Logo da empresa" title="Logo da empresa" />
+<!-- o atributo alt significa, texto alternativo-->
+
+
+
+    </head>
+
+
+<!--Aqui já usamos a semantica para a construção da pagian. Main que seria o conteúdo principal
+No exemplo abaixo utilizamos diferente tamanhos para definir a ordem de grandeza da informação, conforme detalhado abaixo-->
+    <main> 
+
+
+<!-- adicionando um foto no main -->        
+        <img src="/arcoiris.jpg" alt="Foto do Arcoiris" title="Foto do Arcoiris"/>
+
+
+<!-- Adicionando um video na pagina do html wight e height são os tamnhos do video e control é para aparecer
+os botoes de pause, volume e mais-->
+        <video width="550" height="560" controls>
+                <source src="/video.MP4.MP4" type="video/mp4"/>
+        </video>
+
+
+
+            <h1>Terra</h1>
+            <p>Teste de informação </p>
+
+<!--Posso deixar em negrito com strong uma palavra ou frase inteira-->
+            <h2>America do Sul</h2>
+            <p><strong>Teste</strong> de informação </p>
+            <h3> Brasil </h3>
+            <p>Teste de informação </p>
+
+<!-- posso colocar uma palavra ou frase como <span>, a span na realidade apenas é um texto na tela. Não tem peso semantico-->            
+            <h4> <span>Sao Paulo</span> </h4>
+            <p>Teste de informação </p>
+            <h5> Campinas</h5>
+            <p>Teste de informação </p>
+            <h6> Formosa </h6>
+            <p>Teste de informação </p>
+
+<!-- Criando links no corpo da estrutura -->
+            <a href="http://www.google.com" title="site do google" target="_blank"> Teste de Link </a>
+<!-- neste caso puxamos o link com a href, adicionamos um titulo e com target falamos se irá abrir na mesma pagina
+(_selfie) ou em uma nova pagina (_blank)-->
+
+<!-- Podemos também add links direto em textos e fotos-->
+<!-- Neste caso o final da frase " aprender mais!" se torna um link para o site do google.-->
+            <p> Estamos no curso de HTML e queremos 
+                <a href="http://www.google.com" title="aprender mais" target="_blank" > aprender mais! </a> 
+
+            </p>
+<!-- no mesmo caso para fotos. Podemos gerar um link para quando clicar na foto ser encaminhado direto para um site. 
+Neste caso a foto esta sendo redirecionada para meu linkedin-->
+            <a href= "https://www.linkedin.com/in/deidison-bastos-pereira-1689bb50/" title="linkedin" target="_blank">
+                    <img src="/photo.jpg.png"/>
+            </a>"
+
+
+<!-- Criando listas desordenadas, o type posso escolher que será circulo a potuação-->
+        <ul type="circle">
+                <li>item 1 </li>
+                <li>item 2 </li>
+        </ul>
+
+<!-- criando listas ordenadas, o atributo start me diz a partir de onde quero começar a lista  e o Type me fala
+se quero letra ou numero para ordenar -->        
+        <ol start="3" type="A">
+                <li>item 1</li>
+                <li>item 2</il>
+        </ol>
+
+<!-- Aqui lista em definição. Tabalha com um dicionario. Damos a palavra e o siginficado dela (dd)-->
+        <dl>
+                <dt>Palavra 1</dt>
+                <dd>Explicação da Palavra 1 </dd>
+
+        </dl>
+
+
+<!-- Criando tabelas 
+Thead é o cabeçalho da tabela
+tbody o corpo da tabela
+tfoot o rodapé da tabela -->
+        <table>
+                <thead>
+                        <tr>
+                                <th >Mês de Atividade</th>
+                                <th>Nome da Atividade</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                                <td colspan="2" >Janeiro</td>
+                        </tr>
+                        <tr>
+                                <td>Fevereiro</td>
+                                <td rowspan="2">Yoga</td>
+                        </tr>
+                        <tr> 
+                                <td>Março</td>
+                        </tr>
+                </tbody>
+                <tfoot>
+                        <tr>
+                                <td>Total de Atividades</td>
+                                <td> 2 atividades</td>
+                        </tr>
+                </tfoot>
+
+        </table>
+
+
+
+        </main>
+        <body>
+
+        </body>          
+</html>
