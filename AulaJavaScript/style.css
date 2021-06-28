@@ -1,3 +1,17 @@
-body {
-    background-color: rgb(161, 173, 169);
+head {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+    border: white;
+    
 }
+
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: white;
+    nav-down: auto;
+    
+}
+
