@@ -1,9 +1,11 @@
 const newListForm = document.querySelector("[data-new-list-form]")
+    console.log(newListForm)
+
 const newListInput = document.querySelector("[data-new-list-input]")
 const listConteiner = document.querySelector("[data-lists]")
 
 
-/*
+
 let lists = ['html', 'js']
 
 newListForm.addEventListener("submit", function (e) {
@@ -16,6 +18,9 @@ newListForm.addEventListener("submit", function (e) {
     render()
 })
 
+function createList(name){
+    return {id: Date.now().toString(), name: name 
+}
 function render() {
     lists.forEach(function (list) {
         const item = document.createElement("li")
@@ -24,8 +29,6 @@ function render() {
         listConteiner.appendChild(item)
     })
 
-    function createList(name){
-        return {id: Date.now().toString(), name: name }
-
-    }
-    render()
+    function createElement(element) 
+        while (element.firstChild) {element.removeChild(element.firstChild)}
+    
