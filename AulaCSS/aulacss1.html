@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Página de curso HTML Gama</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Texto descritivo da página" />
+    <meta name="author" content="Gama" />
+    <meta name="viewport" content="width=devide=width, initial-scale=1.0" />
+
+    <!-- Aqui trabalhamos com FlexBox -->
+    <style>
+        .flex-div {
+            /* Display: flex, faz com que os dados comecem da esquerda para direta*/
+            display: flex;
+            /*aqui falamos para ele pular linha quando a pagina acabar*/
+            flex-wrap: wrap;
+            /* flex-direction: row-reverse, faz com a ordem fique ao contratio
+            flex-direction: column, faz com que os dados fiquem em coluna
+            flex-direction: column-reverse, faz com que os dados fiquem em coluna, mas ao reverso.*/
+
+
+            justify-content: space-between;
+            /* align-items: podemos alinhar os itens do texto como: below, center */
+        }
+        .child-div{
+            border: 1px solid black;
+            width: 20px;
+
+        }
+    </style>
+
+<body>
+    <div class="flex-div">
+        <div class="child-div">
+            1
+        </div>
+        <div class="child-div">
+            2
+        </div>
+        <div class="child-div">
+            3
+        </div>
+    </div>
+
+</body>
